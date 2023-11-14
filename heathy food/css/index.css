@@ -1,0 +1,439 @@
+/* Comentario */
+* {
+    margin: 0px;
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+}
+
+header {
+    box-shadow: 0 5px 6px 0 rgb(32 33 36 / 28%);
+    position: fixed;
+    top: 0;
+    background-color: rgba(255, 255, 255);
+    width: 100%;
+    z-index: 1;
+}
+
+main {
+    margin-left: 15%;
+    margin-right: 15%;
+    margin-top: 160px;
+}
+
+nav {
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1;
+}
+
+section {
+    border-bottom: solid 1px #1CA039;
+    padding-bottom: 30px;
+}
+
+h2 {
+    color: #1CA039;
+    margin: 3% 5%;
+}
+
+h3 {
+    color: #050505;
+}
+
+p {
+    color: #050505;
+}
+
+a {
+    color: #050505;
+    font-family: 'Inter', sans-serif; 
+    text-decoration: none;
+}
+
+ul {
+    list-style: none;
+}
+.ulNavegacion{
+    display: flex;
+}
+/* -----HEADER----- */
+.logo {
+    height: 40px;
+}
+.logoContenedor {
+    height: 40px;
+    margin: 15px 0;
+    padding: 0 10%;
+}
+.navegacion{
+    font-size: 20px;
+    padding: 0 20px;
+    font-weight: bold;
+}
+.liNavegacion:hover{
+    scale: 1.2;
+}
+/* -----SECTION CURIOSIDADES----- */
+.sepIzq {
+    margin: 2% 7%;
+}
+.parrafo {
+    margin: 5% 5% 0;
+    text-align: justify;
+}
+
+/* ------TARJETAS RECETAS----- */
+.tarjetas {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 30px;
+}
+
+.tarjeta {
+    margin: 0 2%;
+    display: block;
+    width: 20%;
+    text-align: center;
+    background-color: rgb(7, 232, 156, 0.2);
+    border-radius: 20px;
+    transition: 100ms ease;
+    min-width: 160px;
+    position: relative;
+    height: 225px;
+    max-width: 200px;
+}
+.tarjeta:hover{
+    scale: 1.2;
+}
+.imgTarjeta {
+    height: 150px;
+    border-radius: 100px;
+    display: block;
+    position: absolute;
+    left: calc(50% - 75px);
+    top: 10px;
+}
+
+.textTarj {
+    right: 0;
+    width: 200px;
+    padding: 0;
+    font-size: 14px;
+    font-weight: lighter;
+    text-decoration: underline;
+    position: relative;
+    top: 170px;
+}
+
+.muchoMas {
+    text-align: center;
+    font-size: 16px;
+}
+
+/* --------FOOTER----- */
+footer {
+    height: 100px;
+    position: relative;
+}
+
+.textoF {
+    width: 50%;
+    height: 100px;
+    display: grid;
+    align-content: center;
+    justify-content: center;
+}
+
+.email {
+    width: 50%;
+    height: 100px;
+    position: absolute;
+    right: 0;
+    top: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#recibi {
+    padding: 0 0 0 70px;
+}
+
+.pFotter {
+    font-weight: bold;
+}
+
+input {
+    border-radius: 5px;
+    padding: 5px;
+    border: 2px solid #1CA039;
+    font-size: 14px;
+}
+
+button {
+    border-radius: 5px;
+    padding: 5px 30px;
+    background-color: #1CA039;
+    margin-left: 20px;
+    font-size: 20px;
+    font-weight: bold;
+    color: white;
+    border: none;
+    box-shadow: 4px 4px 5px 2px #b5b5b5;
+    cursor: pointer;
+}
+
+/* --------CURIOSIDADES----- */
+.parent {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: auto;
+    grid-column-gap: 5px;
+    grid-row-gap: 5px;
+    border-bottom: solid 1px #1CA039;
+    padding-bottom: 55px;
+}
+
+.div1 {
+    grid-area: 1 / 1 / 2 / 3;
+}
+
+.div2 {
+    grid-area: 2 / 1 / 3 / 2;
+}
+
+.div3 {
+    grid-area: 2 / 2 / 3 / 3;
+    background-image: url(../img/coloresimportan.jpg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    margin-top: 5%;
+}
+
+.div4 {
+    grid-area: 3 / 1 / 4 / 3;
+    margin-top: 55px;
+    padding-top: 20px;
+    border-top: solid 1px #1CA039;
+}
+
+.div5 {
+    grid-area: 4 / 1 / 5 / 2;
+    background-image: url(../img/banana.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    margin-top: 5%;
+}
+
+.div6 {
+    grid-area: 4 / 2 / 5 / 3;
+}
+
+.div7 {
+    grid-area: 5 / 1 / 6 / 3;
+    margin-top: 55px;
+    padding-top: 20px;
+    border-top: solid 1px #1CA039;
+}
+
+.div8 {
+    grid-area: 6 / 1 / 7 / 2;
+}
+
+.div9 {
+    grid-area: 6 / 2 / 7 / 3;
+    background-image: url(../img/cafe\ torrado\ y\ tostado.jpg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    margin-top: 5%;
+}
+
+.div10 {
+    grid-area: 7 / 1 / 8 / 3;
+    margin-top: 55px;
+    padding-top: 20px;
+    border-top: solid 1px #1CA039;
+}
+
+.div11 {
+    grid-area: 8 / 1 / 9 / 2;
+    background-image: url(../img/huevo.jpg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    margin-top: 5%;
+}
+
+.div12 {
+    grid-area: 8 / 2 / 9 / 3;
+}
+
+/* --------recetas---- */
+.recetas{
+    display: flex;
+}
+aside{
+    width: 400px;
+    /* --------border-right: solid 1px rgb(32 33 36 / 28%);---- */
+    
+}
+.tituloListas{
+    margin-top: 20px;
+}
+.listas{
+    list-style: disc;
+}
+.lista{
+    line-height: 40px;
+    list-style: disc;
+}
+article{
+    margin: 0 7%;
+}
+.recetaImg{
+    height: 200px;
+    background-color: blueviolet;
+    border-radius: 15%;
+    margin: 0 50%;
+}
+.ingredientes{
+    list-style: disc;
+    margin-top: 50px;
+}
+.ingrediente{
+    margin: 10px 0;
+}
+.procedimientos{
+    list-style: disc;
+    margin-top: 50px;
+}
+.procedimiento{
+    margin: 10px 0;
+}
+/* --------modificaciones de bootstrap;---- */
+
+.acordeon-header{
+    z-index: 0;
+}
+
+/* --------media query----- */
+@media(max-width:412px) {
+
+    /* --------tarjetas----- */
+    .tarjetas {
+        display: block;
+        margin: 5% 25%;
+    }
+
+    .tarjeta {
+        width: 100%;
+        margin: 15% 0;
+    }
+    .recetas{
+        display: block;
+    }
+    .acordion-button{
+        width: 300px;
+
+    }
+    .recetaImg{
+        margin: 0 45px;
+    }
+    .aside{
+        width: 300px;
+    }
+    /* --------footer----- */
+    .textoF {
+        width: 100%;
+    }
+
+    .email {
+        position: relative;
+        width: 100%;
+        height: 50px;
+        padding-bottom: 10px;
+    }
+    .accordionBoton {
+        width: 350px;
+        padding: 0;
+        margin: 0;
+        background-color: red;
+    }
+    .accordionCuerpo {
+        padding-left: 30px;
+    }
+    button{
+        box-shadow: none;
+    }
+    /* --------nuevo css grid celular----- */
+    .parent {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(12, auto);
+        grid-column-gap: 5px;
+        grid-row-gap: 5px;
+    }
+
+    .div1 {
+        grid-area: 1 / 1 / 2 / 2;
+        margin-top: 20px;
+    }
+
+    .div2 {
+        grid-area: 2 / 1 / 3 / 2;
+    }
+
+    .div3 {
+        grid-area: 3 / 1 / 4 / 2;
+        height: 170px;
+        margin: 5% 10%;
+    }
+
+    .div4 {
+        grid-area: 4 / 1 / 5 / 2;
+        margin-top: 0;
+    }
+
+    .div5 {
+        grid-area: 5 / 1 / 6 / 2;
+        height: 170px;
+        margin: 5% 10%;
+    }
+
+    .div6 {
+        grid-area: 6 / 1 / 7 / 2;
+    }
+
+    .div7 {
+        grid-area: 7 / 1 / 8 / 2;
+        margin-top: 30px;
+    }
+
+    .div8 {
+        grid-area: 8 / 1 / 9 / 2;
+    }
+
+    .div9 {
+        grid-area: 9 / 1 / 10 / 2;
+        height: 170px;
+        margin: 5% 10%;
+    }
+
+    .div10 {
+        grid-area: 10 / 1 / 11 / 2;
+        margin-top: 0;
+    }
+
+    .div11 {
+        grid-area: 11 / 1 / 12 / 2;
+        height: 115px;
+        margin: 5% 10%;
+    }
+
+    .div12 {
+        grid-area: 12 / 1 / 13 / 2;
+    }
+}
